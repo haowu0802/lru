@@ -10,7 +10,7 @@ To Run:
 
 Specification
 ---
-Algorithm
+Problem Description
 * fixed sized cache in terms of the number of items
 * won't worry about the number of bytes, (this implies memory space is cheap in this situation)
 * keys and values are strings, with no spaces
@@ -26,7 +26,7 @@ Application behaviors
 * EXIT to terminate gracefully
 * invalid input: respond ERROR
 
-Analysis
+Algorithm Analysis
 --------
 * when SET or GET, the item is considered being used, it should become the most recent used
 * by moving the items to the top of the list each time it's GET/SET, the list becomes a sorted list ordered by 'recently used time' DESC
