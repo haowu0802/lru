@@ -18,7 +18,7 @@ Problem Description
 * when full, upon insert, the least recently used item shall be overwritten or removed
 * persistence across sessions not needed
 
-Application behaviors
+Application Behaviors
 * read from stdin, write to stdout, no prompt/extra line
 * first input set SIZE - max number of items in cache, respond SIZE OK, as first OP
 * to SET item: SET <KEY> <VALUE>, return SET OK
@@ -39,7 +39,7 @@ Algorithm Analysis
 * with both array and hash-table, the look up time(on GET/SET) complexity will be O(1+n),the space complexity will be O(2*n) for having an array of the keys and a hash-table for key-value pairs
 
 
-Problem Description
+Original Problem Description
 ---
 > Design and implement an LRU (Least Recently Used) cache. This is a cache with fixed size in terms of the number of items it holds (supplied at instantiation).  For this exercise, we won’t worry about the number of bytes. Your program can treat the keys and values as strings.  You don’t need to support keys or values that contain spaces.  The cache must allow client code to get items from the cache and set items to the cache. Once the cache is full, when the client wants to store a new item in the cache, an old item must be overwritten or
 removed to make room. The item we will remove is the Least Recently Used (LRU) item.  Note that your cache does not need persistence across sessions.
