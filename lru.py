@@ -13,7 +13,7 @@ if sys.version_info[:2] <= (2, 7):
 
 
 class Cache:
-    """the cache, uses linked list and Dictionary for tracking least recently used and key value pairs"""
+    """the cache, uses ordered array and Dictionary for tracking least recently used and key value pairs"""
 
     def __init__(self, size):
         self.size = size  # the size of the cache
