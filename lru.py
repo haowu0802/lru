@@ -100,6 +100,9 @@ def operations(cache_size):
             cache.get(key)
         elif cmd == 'SET':
             key = op[1]
+            if len(op) < 2:
+                print("ERROR")
+                continue
             value = op[2]
             cache.set(key, value)
 
@@ -111,7 +114,7 @@ if __name__ == "__main__":
     size_op = get_input().split(" ")
 
     # check if first operation is SIZE and <integer> is integer
-    if (size_op[0] != 'SIZE') or (not (size_op[1]).isnumeric()):
+    if (size_op[0] != 'SIZE') or (not (size_op[1]).isdigit()):
         exit("ERROR")
     else:
         input_size = int(size_op[1])
