@@ -1,6 +1,6 @@
 Design and implement an LRU (Least Recently Used) cache.
 --------------------------------------------------------
-This readme.md and the code can also be found here:
+This readme.md in well formatted Markups and the code can also be found here:
 
 https://github.com/haowu0802/lru
 
